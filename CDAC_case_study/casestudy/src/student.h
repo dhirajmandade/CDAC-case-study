@@ -8,9 +8,11 @@
 #ifndef STUDENT_H_
 #define STUDENT_H_
 #include <string>
+#include <vector>
+#include "preferences.h"
 using namespace std;
 class student {
-public:
+private:
 	int id;
 	string name;
 	int rank_a,rank_b,rank_c;
@@ -19,12 +21,14 @@ public:
 	string course_name;
 	string center_id;
 	string payment;
-	string reported,prn,preferences;
+	string reported,prn,alloc_pref;
+public:
+	vector<preferences>temp_pref;
 
 
 public:
 	student();
-	student(int id,string name,int rank_a,int rank_b,int rank_c,string degree,double degree_marks,string course_name,string center_id,string payment,string reported,string prn,string preferences);
+	student(int id,string name,int rank_a,int rank_b,int rank_c,string degree,double degree_marks,string course_name,string center_id,string payment,string reported,string prn,string alloc_pref);
 	virtual ~student();
 	int getid();
 	void setid(int id);
@@ -48,12 +52,15 @@ public:
 	void setpayment(string payment);
 	string getreported();
 	void setreported(string reported);
-	string set_prn();
-	void get_prn(string prn);
-	string set_preferences();
-	void get_preferences(string preferences);
+	string get_prn();
+	void set_prn(string prn);
+	string getalloc_pref();
+	void setalloc_pref(string alloc_pref);
+	vector<preferences>getpref();
+	void setpref(vector<preferences>& pref);
 	void accept();
 	void display();
+	void display_pref();
 
 
 };

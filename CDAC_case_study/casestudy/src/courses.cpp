@@ -10,6 +10,7 @@
 #include <iostream>
 #include <sstream>
 #include <fstream>
+#include "capacities.h"
 using namespace std;
 courses::courses() {
 	// TODO Auto-generated constructor stub
@@ -51,4 +52,25 @@ void courses::display(){
 	cout<<"Fees:"<<this->getfees()<<endl;
 	cout<<"Section:"<<this->getsection()<<endl;
 	cout<<"\n"<<endl;
+}
+void courses::display_eligibility(){
+
+	for(unsigned int i=0;i<temp_eligibility.size();i++){
+		cout<<" -";
+		temp_eligibility[i].display();
+	}
+}
+vector<Eligibilities>courses::geteligibility(){
+	return temp_eligibility;
+}
+void courses::seteligibility(vector<Eligibilities>& eligibility){
+	this->temp_eligibility=temp_eligibility;
+}
+void courses::display_capacities(vector<capacities>& cap){
+	map<string,int>::iterator itr=center_caps.begin();
+	while(itr!=center_caps.end())
+	{
+		cap[itr->second].display();
+		itr++;
+	}
 }

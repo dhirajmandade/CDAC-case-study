@@ -8,9 +8,14 @@
 #ifndef CENTERS_H_
 #define CENTERS_H_
 #include <string>
+#include <map>
+#include <vector>
+#include "capacities.h"
 using namespace std;
 class centers {
 	string center_id,center_name,address,coordinator,password;
+public:
+	map<string,int>course_caps;
 public:
 	centers();
 	virtual ~centers();
@@ -25,6 +30,7 @@ public:
 	string getpassword();
 	void setpassword(string password);
 	void display();
+	void display_capacities(vector<capacities>& cap);
 };
 
 #endif /* CENTERS_H_ */

@@ -9,10 +9,17 @@
 #define COURSES_H_
 #include <iostream>
 #include <string>
+#include <vector>
+#include <map>
+#include "Eligibilities.h"
+#include "capacities.h"
 using namespace std;
 class courses {
 	int course_id;
 	string course_name,fees,section;
+public:
+	vector<Eligibilities>temp_eligibility;
+	map<string,int>center_caps;
 public:
 	courses();
 	virtual ~courses();
@@ -25,6 +32,11 @@ public:
 	string getsection();
 	void setsection(string section);
 	void display();
+	void display_eligibility();
+	vector<Eligibilities>geteligibility();
+	void seteligibility(vector<Eligibilities>& eligibility);
+	void display_capacities(vector<capacities>& cap);
+
 };
 
 #endif /* COURSES_H_ */

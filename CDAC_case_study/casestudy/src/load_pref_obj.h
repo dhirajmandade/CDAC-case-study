@@ -14,9 +14,19 @@
 #include <vector>
 #include <string>
 #include <algorithm>
+#include "student.h"
 using namespace std;
 vector<preferences>temp_pref;
-vector<preferences>load_preferences(){
+student* find_students(vector<student>& students,int id)
+{
+	unsigned i;
+	for(i=0;i<students.size();i++){
+		if(students[i].getid()==id)
+			return &students[i];
+	}
+	return NULL;
+}
+vector<preferences>load_preferences(vector<student>& students){
 
 	ifstream fin;
 	preferences p;
@@ -38,7 +48,10 @@ vector<preferences>load_preferences(){
 		getline(str,temp,',');
 		p.setcenter_id(temp);
 
-		temp_pref.push_back(p);
+
+		student *s=find_students(students,p.getid());
+
+		s->temp_pref.push_back(p);
 	}
 	return temp_pref;
 }

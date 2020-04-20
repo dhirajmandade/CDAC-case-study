@@ -59,3 +59,11 @@ void centers::display(){
 	cout<<"\n"<<endl;
 
 }
+void centers::display_capacities(vector<capacities>& cap){
+	map<string,int>::iterator itr=course_caps.begin();
+		while(itr!=course_caps.end())
+		{
+			cap[itr->second].display();
+			itr++;
+		}
+}

@@ -51,6 +51,7 @@ void capacities::display(){
 	cout<<"filled capacity:"<<getfilled_capacity()<<endl;
 	cout<<"\n"<<endl;
 }
+
 capacities::~capacities(){
 
 }

@@ -15,9 +15,19 @@
 #include <vector>
 #include <string>
 #include <algorithm>
+#include "courses.h"
 using namespace std;
 vector<Eligibilities>temp_eligibility;
-vector<Eligibilities>load_eligibilities(){
+courses* find_courses(vector<courses>& course,string course_name)
+{
+	unsigned i;
+	for(i=0;i<course.size();i++){
+		if(course[i].getcourse_name()==course_name)
+			return &course[i];
+	}
+	return NULL;
+}
+vector<Eligibilities>load_eligibilities(vector<courses>& course){
 
 	ifstream fp;
 	fp.open("../eligibilities.csv");
@@ -36,7 +46,9 @@ vector<Eligibilities>load_eligibilities(){
 		getline(str,temp,',');
 		e.setmin_marks(stod(temp));
 
-		temp_eligibility.push_back(e);
+		courses *c=find_courses(course,e.getcourse_name());
+
+		c->temp_eligibility.push_back(e);
 	}
 	return temp_eligibility;
 }

@@ -8,9 +8,10 @@
 #include <iostream>
 #include <sstream>
 #include <fstream>
+#include <vector>
 using namespace std;
 #include "student.h"
-
+#include "preferences.h"
 student::student() {
 	/*this->id=0;
 	this->name="xyz";
@@ -20,14 +21,14 @@ student::student() {
 	this->degree="BE";
 	this->degree_marks=90.0;
 	this->course_name="DAC";
-	this->center_id="SIP";
+	this->center_id="SIP";b
 	this->payment=10000.2;
 	this->retported=*/
 
 
 
 }
-student::student(int id,string name,int rank_a,int rank_b,int rank_c,string degree,double degree_marks,string course_name,string center_id,string payment,string reported,string prn,string preferences){
+student::student(int id,string name,int rank_a,int rank_b,int rank_c,string degree,double degree_marks,string course_name,string center_id,string payment,string reported,string prn,string alloc_pref){
 	this->id=id;
 	this->name=name;
 	this->rank_a=rank_a;
@@ -40,7 +41,7 @@ student::student(int id,string name,int rank_a,int rank_b,int rank_c,string degr
 	this->payment=payment;
 	this->reported=reported;
 	this->prn=prn;
-	this->preferences=preferences;
+	this->alloc_pref=alloc_pref;
 
 }
 student::~student() {
@@ -114,17 +115,23 @@ string student::getreported(){
 void student::setreported(string reported){
 	this->reported=reported;
 }
-string student::set_prn(){
+string student::get_prn(){
 	return prn;
 }
-void student::get_prn(string prn){
+void student::set_prn(string prn){
 	this->prn=prn;
 }
-string student::set_preferences(){
-	return preferences;
+string student::getalloc_pref(){
+	return alloc_pref;
 }
-void student::get_preferences(string preferences){
-	this->preferences=preferences;
+void student::setalloc_pref(string alloc_pref){
+	this->alloc_pref=alloc_pref;
+}
+vector<preferences>student::getpref(){
+	return temp_pref;
+}
+void student::setpref(vector<preferences>& pref){
+	this->temp_pref=temp_pref;
 }
 void student::accept(){
 	cout<<"Enter details of students"<<endl;
@@ -145,7 +152,7 @@ void student::accept(){
 	this->payment="NA";
 	this->reported="NA";
 	this->prn="NA";
-	this->preferences="NA";
+	this->alloc_pref="NA";
 }
 void student::display(){
 	cout<<"form no:"<<id<<endl;
@@ -160,7 +167,14 @@ void student::display(){
 	cout<<"payment:"<<payment<<endl;
 	cout<<"reported status:"<<reported<<endl;
 	cout<<"PRN:"<<prn<<endl;
-	cout<<"Preferences:"<<preferences<<endl;
-	cout<<"\n------------------------------------------------------------------------\n";
-
+	cout<<"allocatedb Preferences:"<<alloc_pref<<endl;
+	//cout<<"\n------------------------------------------------------------------------\n";
+	cout<<"\n"<<endl;
+}
+void student::display_pref()
+{
+	for(unsigned int i=0;i<temp_pref.size();i++){
+		cout<<" -";
+		temp_pref[i].display();
+	}
 }
