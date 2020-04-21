@@ -52,7 +52,30 @@ vector<Eligibilities>load_eligibilities(vector<courses>& course){
 	}
 	return temp_eligibility;
 }
+vector<Eligibilities>load_eligibilities(){
 
+	ifstream fp;
+	fp.open("../eligibilities.csv");
+	string line;
+	Eligibilities e;
+	while(getline(fp,line)){
+		stringstream str(line);
+		string temp;
+
+		getline(str,temp,',');
+		e.setcourse_name(temp);
+
+		getline(str,temp,',');
+		e.setdegree(temp);
+
+		getline(str,temp,',');
+		e.setmin_marks(stod(temp));
+
+
+		temp_eligibility.push_back(e);
+	}
+	return temp_eligibility;
+}
 
 
 #endif /* LOAD_ELIGIBILITY_OBJ_H_ */

@@ -1,17 +1,14 @@
 /*
  * round1_csv.h
  *
- *  Created on: 20-Apr-2020
+ *  Created on: 21-Apr-2020
  *      Author: sunbeam
  */
-#include <fstream>
-#include <vector>
-#include <iostream>
-#include <sstream>
-using namespace std;
 
 #ifndef ROUND1_CSV_H_
 #define ROUND1_CSV_H_
+
+
 void round1_csv(){
 	ofstream fp("students_after_round_1.csv");
 	for(size_t i=0;i<students.size();i++){
@@ -32,7 +29,17 @@ void round1_csv(){
 	fp.close();
 }
 
+void capacity_after_round1()
+{
+	ofstream fp("capacity_after_round1.csv");
+	for(size_t i=0;i<cap.size();i++){
+		fp<<cap[i].getcenter_id()<<",";
+		fp<<cap[i].getcourse_name()<<",";
+		fp<<cap[i].getcapacity()<<",";
+		fp<<cap[i].getfilled_capacity()<<endl;
 
-
+	}
+	fp.close();
+}
 
 #endif /* ROUND1_CSV_H_ */

@@ -56,6 +56,36 @@ vector<preferences>load_preferences(vector<student>& students){
 	return temp_pref;
 }
 
+vector<preferences>load_preferences(){
+
+	ifstream fin;
+	preferences p;
+	fin.open("../preferences.csv");
+	string line;
+	while(getline(fin,line)){
+		stringstream str(line);
+		string temp;
+
+		getline(str,temp,',');
+		p.setid(stoi(temp));
+
+		getline(str,temp,',');
+		p.set_preferences(temp);
+
+		getline(str,temp,',');
+		p.setcourse_name(temp);
+
+		getline(str,temp,',');
+		p.setcenter_id(temp);
+
+
+
+
+		temp_pref.push_back(p);
+	}
+	return temp_pref;
+}
+
 
 
 

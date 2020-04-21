@@ -13,7 +13,7 @@ using namespace std;
 #include "student.h"
 #include "preferences.h"
 student::student() {
-	/*this->id=0;
+	this->id=0;
 	this->name="xyz";
 	this->rank_a=0;
 	this->rank_b=0;
@@ -21,9 +21,12 @@ student::student() {
 	this->degree="BE";
 	this->degree_marks=90.0;
 	this->course_name="DAC";
-	this->center_id="SIP";b
-	this->payment=10000.2;
-	this->retported=*/
+	this->center_id="SIP";
+	this->payment="";
+	this->reported="";
+	this->prn="";
+	this->alloc_pref="";
+
 
 
 
@@ -162,12 +165,13 @@ void student::display(){
 	cout<<"rank C:"<<rank_c<<endl;
 	cout<<"Dregree:"<<degree<<endl;
 	cout<<"Degree marks:"<<degree_marks<<endl;
+	cout<<"allocatedb Preferences:"<<alloc_pref<<endl;
 	cout<<"course name:"<<course_name<<endl;
 	cout<<"center id:"<<center_id<<endl;
 	cout<<"payment:"<<payment<<endl;
 	cout<<"reported status:"<<reported<<endl;
 	cout<<"PRN:"<<prn<<endl;
-	cout<<"allocatedb Preferences:"<<alloc_pref<<endl;
+
 	//cout<<"\n------------------------------------------------------------------------\n";
 	cout<<"\n"<<endl;
 }

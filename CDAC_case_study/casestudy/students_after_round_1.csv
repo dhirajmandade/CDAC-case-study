@@ -2,30 +2,30 @@
 24,harish,51,123,-1,B.E. Civil,80.93,NA,0,NA,NA,0,0
 182,chandralekha,49,122,-1,B.Sc.,48.72,NA,0,NA,NA,0,0
 112,prince,96,118,-1,B.Sc.,64.04,NA,0,NA,NA,0,0
-135,karan,140,116,-1,M.Sc. Statistics,58.85,NA,0,NA,NA,0,0
-92,vidhya,164,113,-1,B.E. Civil,67.66,NA,0,NA,NA,0,0
+135,karan,140,116,-1,M.Sc. Statistics,58.85,1,PG-DAC,SIP,NA,0,0
+92,vidhya,164,113,-1,B.E. Civil,67.66,1,PG-DAC,SIP,NA,0,0
 171,seema,120,112,-1,M.Sc. Statistics,52.07,NA,0,NA,NA,0,0
 164,rhea,161,107,-1,B.E. Electronics,53.18,NA,0,NA,NA,0,0
 151,kalyani,29,105,-1,B.E. Mechanical,56.16,NA,0,NA,NA,0,0
-109,dinesh,119,103,-1,M.Sc. Statistics,64.92,NA,0,NA,NA,0,0
+109,dinesh,119,103,-1,M.Sc. Statistics,64.92,1,PG-DAC,SIP,NA,0,0
 192,anurag,9,102,-1,B.E. Computer,46.64,NA,0,NA,NA,0,0
 19,shrinidhi,199,99,-1,B.E. Electrical,82.12,NA,0,NA,NA,0,0
-78,mary,94,95,-1,M.Sc. Statistics,69.98,NA,0,NA,NA,0,0
+78,mary,94,95,-1,M.Sc. Statistics,69.98,1,PG-DAC,ACN,NA,0,0
 148,sneha,186,94,-1,B.E. Electrical,56.56,NA,0,NA,NA,0,0
 32,abdul,86,125,-1,M.Sc. Statistics,78.89,NA,0,NA,NA,0,0
-39,dilmini,50,82,-1,B.E. Computer,76.7,NA,0,NA,NA,0,0
-127,shivani,79,73,-1,B.E. Civil,60.66,NA,0,NA,NA,0,0
-33,girish,168,71,-1,M.Sc. Computer,78.88,NA,0,NA,NA,0,0
+39,dilmini,50,82,-1,B.E. Computer,76.7,1,PG-DBDA,SIP,NA,0,0
+127,shivani,79,73,-1,B.E. Civil,60.66,1,PG-DAC,SIK,NA,0,0
+33,girish,168,71,-1,M.Sc. Computer,78.88,1,PG-DAC,SIK,NA,0,0
 120,sadaf,107,64,-1,M.Sc. Computer,62.04,NA,0,NA,NA,0,0
 197,dawn,3,61,-1,B.E. Electronics,45.56,NA,0,NA,NA,0,0
-31,swati,34,60,-1,B.E. Electronics,79.08,NA,0,NA,NA,0,0
+31,swati,34,60,-1,B.E. Electronics,79.08,1,PG-DGI,ACN,NA,0,0
 61,suresh,146,59,-1,B.E. Mechanical,73.32,NA,0,NA,NA,0,0
 113,sakshi,135,52,-1,B.E. Electrical,63.91,NA,0,NA,NA,0,0
-28,dhruv,27,51,-1,M.Sc. Computer,80.67,NA,0,NA,NA,0,0
-81,anjana,116,50,-1,B.E. Electrical,69.87,NA,0,NA,NA,0,0
+28,dhruv,27,51,-1,M.Sc. Computer,80.67,1,PG-DGI,ACN,NA,0,0
+81,anjana,116,50,-1,B.E. Electrical,69.87,1,PG-DBDA,SIP,NA,0,0
 52,debbie,30,48,-1,B.E. Electronics,75.41,NA,0,NA,NA,0,0
 49,akansha,104,43,-1,B.Sc.,75.59,NA,0,NA,NA,0,0
-141,gokul,131,156,-1,B.E. Civil,57.96,NA,0,NA,NA,0,0
+141,gokul,131,156,-1,B.E. Civil,57.96,1,PG-DAC,ACN,NA,0,0
 77,sumit,200,189,-1,M.Sc. Computer,70.55,NA,0,NA,NA,0,0
 30,tanvi,180,188,-1,M.Sc. Statistics,79.89,NA,0,NA,NA,0,0
 163,shivam,163,186,-1,B.E. Computer,53.68,NA,0,NA,NA,0,0
@@ -48,21 +48,21 @@
 167,deep,108,137,-1,M.Sc. Computer,52.93,NA,0,NA,NA,0,0
 187,diya,130,134,-1,B.E. Electrical,47.7,NA,0,NA,NA,0,0
 170,varsha,173,132,-1,M.Sc. Computer,52.16,NA,0,NA,NA,0,0
-142,sanchit,145,129,-1,M.Sc. Statistics,57.82,NA,0,NA,NA,0,0
+142,sanchit,145,129,-1,M.Sc. Statistics,57.82,1,PG-DAC,ACN,NA,0,0
 62,kamalika,192,128,-1,B.Sc.,73.23,NA,0,NA,NA,0,0
 42,amit,194,126,-1,B.E. Civil,76.43,NA,0,NA,NA,0,0
 65,kunal,124,-1,-1,M.Sc. Computer,73.09,NA,0,NA,NA,0,0
-97,ankur,93,33,-1,B.E. Computer,66.84,NA,0,NA,NA,0,0
+97,ankur,93,33,-1,B.E. Computer,66.84,1,PG-DBDA,ACN,NA,0,0
 74,nikita,14,31,-1,B.E. Civil,71.69,NA,0,NA,NA,0,0
 199,nitin,41,27,-1,B.Sc.,45.05,NA,0,NA,NA,0,0
-162,ajay,46,21,-1,B.E. Computer,54.34,NA,0,NA,NA,0,0
-75,atul,62,17,-1,M.Sc. Statistics,71.2,NA,0,NA,NA,0,0
+162,ajay,46,21,-1,B.E. Computer,54.34,1,PG-DAC,ACN,NA,0,0
+75,atul,62,17,-1,M.Sc. Statistics,71.2,1,PG-DBDA,ACP,NA,0,0
 125,rajeev,70,14,-1,B.E. Mechanical,61.32,NA,0,NA,NA,0,0
-4,manish,21,13,-1,B.E. Electrical,84.55,NA,0,NA,NA,0,0
+4,manish,21,13,-1,B.E. Electrical,84.55,1,PG-DAC,ACP,NA,0,0
 67,archita,1,10,-1,B.E. Civil,72.92,NA,0,NA,NA,0,0
 166,aaditya,138,-1,-1,M.Sc. Computer,52.96,NA,0,NA,NA,0,0
-93,natasha,33,20,-1,M.Sc. Computer,67.59,NA,0,NA,NA,0,0
-106,juvina,28,-1,-1,B.E. Computer,65.16,NA,0,NA,NA,0,0
+93,natasha,33,20,-1,M.Sc. Computer,67.59,1,PG-DMC,SIP,NA,0,0
+106,juvina,28,-1,-1,B.E. Computer,65.16,1,PG-DGI,ACN,NA,0,0
 29,deepak,87,-1,-1,B.E. Civil,80,NA,0,NA,NA,0,0
 34,manisha,182,-1,-1,B.E. Electrical,78.82,NA,0,NA,NA,0,0
 128,krishna,170,-1,-1,B.E. Electrical,60.55,NA,0,NA,NA,0,0
@@ -70,39 +70,39 @@
 27,manu,110,-1,-1,M.Sc. Computer,80.72,NA,0,NA,NA,0,0
 190,mayur,4,-1,-1,M.Sc. Computer,47.43,NA,0,NA,NA,0,0
 131,raghav,112,-1,-1,B.E. Civil,59.54,NA,0,NA,NA,0,0
-168,shaan,43,36,-1,B.E. Electronics,52.76,NA,0,NA,NA,0,0
+168,shaan,43,36,-1,B.E. Electronics,52.76,1,PG-DAC,ACP,NA,0,0
 172,lavanya,88,39,-1,B.E. Computer,51.92,NA,0,NA,NA,0,0
-102,prachi,95,40,-1,B.E. Computer,66.26,NA,0,NA,NA,0,0
-54,nishant,5,35,-1,B.E. Computer,74.63,NA,0,NA,NA,0,0
+102,prachi,95,40,-1,B.E. Computer,66.26,1,PG-DAC,ACP,NA,0,0
+54,nishant,5,35,-1,B.E. Computer,74.63,1,PG-DGI,ACN,NA,0,0
 91,aryan,2,1,1,B.E. Mechanical,67.77,NA,0,NA,NA,0,0
 178,anusha,10,3,2,B.E. Electrical,49.59,NA,0,NA,NA,0,0
 114,deepro,31,12,3,M.Sc. Statistics,63.77,NA,0,NA,NA,0,0
-11,soham,45,11,4,B.E. Computer,83.5,NA,0,NA,NA,0,0
-108,vaibhav,65,15,5,B.E. Computer,65.02,NA,0,NA,NA,0,0
+11,soham,45,11,4,B.E. Computer,83.5,1,PG-DESD,ACN,NA,0,0
+108,vaibhav,65,15,5,B.E. Computer,65.02,1,PG-DESD,SIP,NA,0,0
 140,shekhar,58,9,6,B.E. Mechanical,58.06,NA,0,NA,NA,0,0
 82,anubhav,8,16,7,M.Sc. Statistics,69.8,NA,0,NA,NA,0,0
 174,anushri,18,34,8,B.E. Mechanical,50.41,NA,0,NA,NA,0,0
-14,tushar,7,42,9,B.E. Electronics,82.88,NA,0,NA,NA,0,0
+14,tushar,7,42,9,B.E. Electronics,82.88,1,PG-DAC,ACP,NA,0,0
 8,isha,38,6,10,B.Sc.,83.82,NA,0,NA,NA,0,0
-99,yash,16,2,11,B.E. Electrical,66.48,NA,0,NA,NA,0,0
-26,manoj,32,8,12,B.E. Electrical,80.89,NA,0,NA,NA,0,0
+99,yash,16,2,11,B.E. Electrical,66.48,1,PG-DESD,ACN,NA,0,0
+26,manoj,32,8,12,B.E. Electrical,80.89,1,PG-DESD,SIP,NA,0,0
 104,leah,39,7,13,B.E. Civil,65.54,NA,0,NA,NA,0,0
 186,indhumathi,63,62,14,B.E. Electronics,47.76,NA,0,NA,NA,0,0
 89,priyanka,97,57,15,B.E. Electronics,68.03,NA,0,NA,NA,0,0
-37,shreya,44,19,16,M.Sc. Computer,78.2,NA,0,NA,NA,0,0
+37,shreya,44,19,16,M.Sc. Computer,78.2,1,PG-DAC,SIK,NA,0,0
 124,anisha,47,22,17,B.E. Mechanical,61.45,NA,0,NA,NA,0,0
-169,sam,25,18,18,M.Sc. Computer,52.18,NA,0,NA,NA,0,0
+169,sam,25,18,18,M.Sc. Computer,52.18,1,PG-DMC,SIP,NA,0,0
 2,siya,155,65,19,B.E. Mechanical,84.82,NA,0,NA,NA,0,0
 143,moii chhangte,13,5,20,B.Sc.,57.77,NA,0,NA,NA,0,0
 88,ramanan,15,28,21,B.Sc.,68.67,NA,0,NA,NA,0,0
 137,khushi,80,38,22,B.E. Electronics,58.2,NA,0,NA,NA,0,0
-36,sasashy,57,29,23,B.E. Computer,78.22,NA,0,NA,NA,0,0
+36,sasashy,57,29,23,B.E. Computer,78.22,1,PG-DMC,SIP,NA,0,0
 176,alok,128,54,24,B.E. Civil,49.93,NA,0,NA,NA,0,0
 73,pratik,160,78,25,B.E. Electronics,71.78,NA,0,NA,NA,0,0
-47,aastha,91,46,26,B.E. Electronics,75.83,NA,0,NA,NA,0,0
+47,aastha,91,46,26,B.E. Electronics,75.83,1,PG-DESD,SIP,NA,0,0
 66,radhika,133,67,27,B.Sc.,73.08,NA,0,NA,NA,0,0
 101,shyam,72,30,28,B.E. Computer,66.36,NA,0,NA,NA,0,0
-110,divya,68,70,29,M.Sc. Statistics,64.67,NA,0,NA,NA,0,0
+110,divya,68,70,29,M.Sc. Statistics,64.67,1,PG-DAC,SIP,NA,0,0
 149,kumar,12,49,30,B.E. Mechanical,56.44,NA,0,NA,NA,0,0
 122,ajeet,114,53,31,M.Sc. Statistics,61.7,NA,0,NA,NA,0,0
 183,anamika,36,26,32,B.E. Mechanical,48.4,NA,0,NA,NA,0,0
@@ -110,7 +110,7 @@
 23,krithika,20,4,34,B.E. Mechanical,81.08,NA,0,NA,NA,0,0
 121,nisha,53,89,35,B.E. Electronics,61.91,NA,0,NA,NA,0,0
 150,rishabh,83,91,36,M.Sc. Computer,56.19,NA,0,NA,NA,0,0
-139,nishita,69,63,37,B.E. Civil,58.13,NA,0,NA,NA,0,0
+139,nishita,69,63,37,B.E. Civil,58.13,1,PG-DAC,SIK,NA,0,0
 70,rahul,77,106,38,M.Sc. Computer,72.56,NA,0,NA,NA,0,0
 76,mayank,142,130,39,B.E. Mechanical,71.02,NA,0,NA,NA,0,0
 189,paaus,54,32,40,B.E. Mechanical,47.57,NA,0,NA,NA,0,0
@@ -118,15 +118,15 @@
 72,rohit,78,92,42,B.E. Electrical,72.45,NA,0,NA,NA,0,0
 181,akash,188,120,43,M.Sc. Computer,48.9,NA,0,NA,NA,0,0
 156,avinash,11,44,44,M.Sc. Computer,55.79,NA,0,NA,NA,0,0
-116,mitali,22,23,45,M.Sc. Statistics,63.01,NA,0,NA,NA,0,0
+116,mitali,22,23,45,M.Sc. Statistics,63.01,1,PG-DAC,SIP,NA,0,0
 64,aswini,48,75,46,M.Sc. Statistics,73.12,NA,0,NA,NA,0,0
 119,niharika,52,72,47,B.E. Electronics,62.22,NA,0,NA,NA,0,0
 115,sunil,121,45,48,M.Sc. Statistics,63.59,NA,0,NA,NA,0,0
 138,ishika,150,104,49,M.Sc. Computer,58.16,NA,0,NA,NA,0,0
-86,pranav,42,77,50,B.E. Electrical,68.98,NA,0,NA,NA,0,0
+86,pranav,42,77,50,B.E. Electrical,68.98,1,PG-DESD,ACP,NA,0,0
 16,raj,89,68,51,M.Sc. Statistics,82.6,NA,0,NA,NA,0,0
 198,sanjay,136,80,52,B.Sc.,45.29,NA,0,NA,NA,0,0
-56,anish,92,37,53,B.E. Civil,74.23,NA,0,NA,NA,0,0
+56,anish,92,37,53,B.E. Civil,74.23,1,PG-DAC,ACP,NA,0,0
 3,dia,19,110,54,B.E. Electrical,84.71,NA,0,NA,NA,0,0
 132,jatin,64,87,55,M.Sc. Statistics,59.22,NA,0,NA,NA,0,0
 200,siddharth,98,100,56,B.E. Computer,45.03,NA,0,NA,NA,0,0
@@ -145,7 +145,7 @@
 94,anil,115,109,69,B.E. Computer,67.34,NA,0,NA,NA,0,0
 15,aniket,189,151,70,B.Sc.,82.88,NA,0,NA,NA,0,0
 9,anu,37,47,71,B.E. Mechanical,83.81,NA,0,NA,NA,0,0
-126,diksha,75,56,72,B.E. Electronics,60.73,NA,0,NA,NA,0,0
+126,diksha,75,56,72,B.E. Electronics,60.73,1,PG-DBDA,ACP,NA,0,0
 85,gayatri,167,111,73,M.Sc. Statistics,69.14,NA,0,NA,NA,0,0
 53,lily,109,149,74,M.Sc. Statistics,75.21,NA,0,NA,NA,0,0
 161,parth,111,161,75,B.E. Electrical,54.66,NA,0,NA,NA,0,0
@@ -165,19 +165,19 @@
 40,vaishnavi,85,136,89,B.Sc.,76.48,NA,0,NA,NA,0,0
 90,n.priyanka,151,170,90,B.E. Electronics,67.99,NA,0,NA,NA,0,0
 12,neha,132,138,91,B.E. Electrical,83.22,NA,0,NA,NA,0,0
-45,abigail,17,84,92,M.Sc. Computer,75.96,NA,0,NA,NA,0,0
+45,abigail,17,84,92,M.Sc. Computer,75.96,1,PG-DESD,ACP,NA,0,0
 134,arusha,66,85,93,B.E. Electrical,58.89,NA,0,NA,NA,0,0
 129,arya,67,141,94,B.Sc.,60.52,NA,0,NA,NA,0,0
 157,crowny,60,86,95,B.E. Electronics,55.6,NA,0,NA,NA,0,0
 185,raju,178,166,96,B.E. Electronics,47.93,NA,0,NA,NA,0,0
 20,vani,59,101,97,B.E. Mechanical,82.11,NA,0,NA,NA,0,0
-83,neeraj,102,76,98,B.E. Electrical,69.63,NA,0,NA,NA,0,0
+83,neeraj,102,76,98,B.E. Electrical,69.63,1,PG-DBDA,ACN,NA,0,0
 154,tanu,84,119,99,B.E. Electronics,55.91,NA,0,NA,NA,0,0
 130,anjali,149,127,100,B.E. Electrical,59.59,NA,0,NA,NA,0,0
 57,riya,162,157,101,M.Sc. Computer,74.09,NA,0,NA,NA,0,0
 25,vikas,126,143,102,B.E. Civil,80.91,NA,0,NA,NA,0,0
 71,akshay,166,154,103,B.Sc.,72.51,NA,0,NA,NA,0,0
-160,ankit,74,114,104,M.Sc. Statistics,54.85,NA,0,NA,NA,0,0
+160,ankit,74,114,104,M.Sc. Statistics,54.85,1,PG-DAC,ACN,NA,0,0
 111,ira,191,142,105,M.Sc. Statistics,64.34,NA,0,NA,NA,0,0
 48,rakesh,134,167,106,B.E. Electronics,75.61,NA,0,NA,NA,0,0
 6,arjun,101,121,107,B.E. Computer,84.16,NA,0,NA,NA,0,0

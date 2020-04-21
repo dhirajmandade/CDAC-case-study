@@ -66,6 +66,32 @@ vector<capacities>load_capacities(vector<courses>& course,vector<centers>& cent)
 	}
 	return temp_cap;
 }
+vector<capacities>load_capacities(){
+	ifstream fp;
+	fp.open("../capacities.csv");
+	string line;
+	capacities c;
+	while(getline(fp,line)){
+		stringstream str(line);
+		string temp;
+
+		getline(str,temp,',');
+		c.setcenter_id(temp);
+
+		getline(str,temp,',');
+		c.setcourse_name(temp);
+
+		getline(str,temp,',');
+		c.setcapacity(temp);
+
+		getline(str,temp,',');
+		c.setfilled_capacity(temp);
+
+		temp_cap.push_back(c);
+
+	}
+	return temp_cap;
+}
 
 
 #endif /* LOAD_CAPACITY_OBJ_H_ */
