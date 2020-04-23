@@ -141,6 +141,8 @@ void student::accept(){
 	cout<<"Enter details of students"<<endl;
 	cout<<"enter form no:";
 	cin>>this->id;
+	cout<<"Enter name";
+	cin>>this->name;
 	cout<<"Rank A:";
 	cin>>this->rank_a;
 	cout<<"Rank B:";
@@ -151,12 +153,13 @@ void student::accept(){
 	cin>>this->degree;
 	cout<<"Enter degree marks:";
 	cin>>this->degree_marks;
-	this->course_name=course_name;
-	this->center_id="NA";
-	this->payment=0.0;
-	this->reported="NA";
-	this->prn="NA";
 	this->alloc_pref=0;
+	this->course_name="NA";
+	this->center_id="NA";
+	this->payment=0;
+	this->reported="0";
+	this->prn="NA";
+
 }
 void student::display(){
 	cout<<"form no:"<<id<<endl;
