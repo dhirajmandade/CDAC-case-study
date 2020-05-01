@@ -162,7 +162,7 @@ void student::accept(){
 
 }
 void student::display(){
-	cout<<"form no:"<<id<<endl;
+	cout<<"\nform no:"<<id<<endl;
 	cout<<"name:"<<name<<endl;
 	cout<<"rank A:"<<rank_a<<endl;
 	cout<<"rank B:"<<rank_b<<endl;

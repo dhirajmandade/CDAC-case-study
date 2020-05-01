@@ -31,6 +31,7 @@ public:
 	void setpassword(string password);
 	void display();
 	void display_capacities(vector<capacities>& cap);
+	void display_center_and_course(vector<capacities>& cap);
 };
 
 #endif /* CENTERS_H_ */

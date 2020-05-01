@@ -53,13 +53,16 @@ void courses::display(){
 	cout<<"Section:"<<this->getsection()<<endl;
 	cout<<"\n"<<endl;
 }
-void courses::display_eligibility(){
+void courses::display_eligibility()
+{
 	cout<<"Course ID:"<<this->getcourse_id()<<endl;
-		cout<<"Course Name:"<<this->getcourse_name()<<endl;
-		cout<<"Fees:"<<this->getfees()<<endl;
-		cout<<"Section:"<<this->getsection()<<endl;
-		cout<<"\n"<<endl;
+	cout<<"Course Name:"<<this->getcourse_name()<<endl;
+	cout<<"Fees:"<<this->getfees()<<endl;
+	cout<<"Section:"<<this->getsection()<<endl;
+	cout<<"\n"<<endl;
+
 	for(unsigned int i=0;i<temp_eligibility.size();i++){
+
 		cout<<" -";
 		temp_eligibility[i].display();
 	}

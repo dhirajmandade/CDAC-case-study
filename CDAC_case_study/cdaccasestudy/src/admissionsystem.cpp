@@ -10,6 +10,7 @@
 
 #include <algorithm>
 AdmissionSystem systemobj;
+using namespace std;
 AdmissionSystem::AdmissionSystem(){
 
 }
@@ -19,8 +20,8 @@ void AdmissionSystem::load_students(){
 	ifstream fp;
 
 	string line;
-	int c=0;
-	fp.open("../04_students_1st_install_paid.csv");
+
+	fp.open("../newstudents.csv");
 	if(!fp) {
 		perror("failed to open file");
 	}
@@ -32,18 +33,18 @@ void AdmissionSystem::load_students(){
 			getline(str,tokens[i],',');
 		student s(stoi(tokens[0]),tokens[1],stoi(tokens[2]),stoi(tokens[3]),stoi(tokens[4]),tokens[5],stod(tokens[6]),stoi(tokens[7]),tokens[8],tokens[9],stod(tokens[10]),tokens[11],tokens[12]);
 		students.push_back(s);
-		c++;
+
 	}
 	fp.close();
-	cout << "students loaded: " << c << endl;
+
 
 }
 
 void AdmissionSystem::load_preferences(){
-	int c=0;
+
 	ifstream fin;
 	preferences p;
-	fin.open("../preferences.csv");
+	fin.open("../newpreferences.csv");
 	string line;
 	while(getline(fin,line)){
 		stringstream str(line);
@@ -61,17 +62,17 @@ void AdmissionSystem::load_preferences(){
 		getline(str,temp,',');
 		p.setcenter_id(temp);
 		pref.push_back(p);
-		c++;
+
 	}
 	fin.close();
 
-	cout << "Preferences loaded: " << c << endl;
+
 }
 
 void AdmissionSystem::load_capacities(){
 	ifstream fp;
-	int count=0;
-	fp.open("../capacities.csv");
+
+	fp.open("../newcapacities.csv");
 	string line;
 	capacities c;
 	while(getline(fp,line)){
@@ -91,16 +92,16 @@ void AdmissionSystem::load_capacities(){
 		c.setfilled_capacity(stoi(temp));
 
 		cap.push_back(c);
-		count++;
+
 	}
 	fp.close();
 
-	cout << "capacities loaded: " << count << endl;
+
 }
 
 void AdmissionSystem::load_centers(){
 	ifstream fp;
-	int count=0;
+
 	fp.open("../centers.csv");
 	string line;
 	centers c;
@@ -124,16 +125,16 @@ void AdmissionSystem::load_centers(){
 		c.setpassword(temp);
 
 		cent.push_back(c);
-		count++;
+
 	}
 	fp.close();
 
-	cout << "centers loaded: " << count << endl;
+
 }
 
 
 void AdmissionSystem::load_courses(){
-	int c=0;
+
 	ifstream fp;
 	fp.open("../courses.csv");
 	string line;
@@ -156,15 +157,15 @@ void AdmissionSystem::load_courses(){
 		c1.setsection(temp);
 
 		course.push_back(c1);
-		c++;
+
 	}
 
 	fp.close();
 
-	cout << "courses loaded: " << c << endl;
+
 }
 void AdmissionSystem::load_eligibilities(){
-	int c=0;
+
 	ifstream fp;
 	fp.open("../eligibilities.csv");
 	string line;
@@ -183,13 +184,25 @@ void AdmissionSystem::load_eligibilities(){
 		e.setmin_marks(stod(temp));
 
 		eligibility.push_back(e);
-		c++;
+
 	}
 	fp.close();
-	cout << "eligibilities loaded: " << c << endl;
+
 
 }
 
+void AdmissionSystem::load_degree(){
+
+	ifstream fp("../degrees.txt");
+	string line;
+	while(getline(fp,line)){
+		degree.push_back(line);
+
+	}
+	fp.close();
+
+
+}
 student* AdmissionSystem::find_students(int id)
 {
 	unsigned i;
@@ -217,13 +230,23 @@ centers*  AdmissionSystem::find_centers(string center_id){
 	}
 	return NULL;
 }
+void AdmissionSystem::find_eligibility(string degree,double min_marks){
+	unsigned i,j;
+	cout<<"\n ---courses according to your eligibility---\n"<<endl;
+	for(i=0;i<course.size();i++){
+		for(j=0;j<course[i].temp_eligibility.size();j++){
+			if(course[i].temp_eligibility[j].getdegree()== degree && course[i].temp_eligibility[j].getmin_marks() < min_marks)
+				course[i].display();
+		}
+	}
+}
 void AdmissionSystem::load_pref_with_stu(){
 	systemobj.load_students();
 
-	int c=0;
+
 	ifstream fin;
 	preferences p;
-	fin.open("../01_preferences.csv");
+	fin.open("../newpreferences.csv");
 	string line;
 	while(getline(fin,line)){
 		stringstream str(line);
@@ -245,14 +268,14 @@ void AdmissionSystem::load_pref_with_stu(){
 		student *s=find_students(p.getid());
 
 		s->temp_pref.push_back(p);
-		c++;
+
 	}
 	fin.close();
 
-	cout << "Preferences loaded: " << c << endl;
+
 }
 void AdmissionSystem::load_eli_with_co(){
-	systemobj.load_courses();
+	//systemobj.load_courses();
 	ifstream fp;
 	int count=0;
 	fp.open("../eligibilities.csv");
@@ -274,18 +297,18 @@ void AdmissionSystem::load_eli_with_co(){
 		courses *c=find_course(e.getcourse_name());
 
 		c->temp_eligibility.push_back(e);
-		count++;
+
 	}
 	fp.close();
 
-	cout << "eligibilities loaded: " << count << endl;
+
 }
 void AdmissionSystem::load_cap_with_cent_and_co(){
-	systemobj.load_courses();
-	systemobj.load_centers();
+	/*systemobj.load_courses();
+	systemobj.load_centers();*/
 	ifstream fp;
-	int count=0;
-	fp.open("../03_capacities.csv");
+
+	fp.open("../newcapacities.csv");
 	string line;
 	capacities c;
 	while(getline(fp,line)){
@@ -310,11 +333,11 @@ void AdmissionSystem::load_cap_with_cent_and_co(){
 
 		centers *cpptr=find_centers(c.getcenter_id());
 		cpptr->course_caps[c.getcourse_name()]=cap.size()-1;
-		count++;
+
 	}
 	fp.close();
 
-	cout << "capacities loaded: " << count << endl;
+
 }
 
 void AdmissionSystem::display_students(){
@@ -333,6 +356,7 @@ void AdmissionSystem::display_courses(){
 	}
 }
 void AdmissionSystem::display_centers(){
+	cout<<"\n---Centers---\n"<<endl;
 	for(unsigned i=0;i<cent.size();i++){
 		cent[i].display();
 	}
@@ -347,6 +371,11 @@ void AdmissionSystem::display_capacities(){
 		cap[i].display();
 	}
 }
+void AdmissionSystem::display_degree(){
+	for(unsigned i=0;i<degree.size();i++){
+		cout<<i+1<<"."<<degree[i]<<endl;
+	}
+}
 void AdmissionSystem::display_studentswith_preference(){
 	for(unsigned i=0;i<students.size();i++){
 		//students[i].display();
@@ -355,7 +384,7 @@ void AdmissionSystem::display_studentswith_preference(){
 }
 void AdmissionSystem::display_courseswith_eligibility(){
 	for(unsigned i=0;i<course.size();i++){
-		course[i].display();
+		//course[i].display();
 		course[i].display_eligibility();
 	}
 }
@@ -371,6 +400,51 @@ void AdmissionSystem::display_centerswith_capacity(){
 		cent[i].display_capacities(cap);
 	}
 }
+void AdmissionSystem::display_centers_with_courses(){
+	cout<<endl;
+	for(unsigned i=0;i<cent.size();i++){
+		cent[i].display_center_and_course(cap);
+		cout<<endl;
+	}
+}
+void AdmissionSystem::display_paid_students(){
+	for(unsigned i=0;i<students.size();i++){
+		if(students[i].getalloc_pref()>0 && students[i].getpayment()>0)
+			students[i].display();
+	}
+}
+void AdmissionSystem::display_prn_generated_students(){
+	int sr_no=1;
+	double coursefees;
+	string prn,s1,s2,s3;
+	cout<<"\nList of reported students:"<<endl;
+
+	for(unsigned x=0;x<systemobj.students.size();x++){
+		if(systemobj.students[x].getreported()=="Reported")
+		{
+			courses *c=systemobj.find_course(systemobj.students[x].getcourse_name());
+			coursefees=stod(c->getfees());
+			if(systemobj.students[x].getpayment()==(coursefees)){
+				s1=systemobj.students[x].getcourse_name();
+				s2=systemobj.students[x].getcenter_id();
+				s3=to_string(sr_no);
+				prn=s1+"_"+s2+"_"+s3;
+				systemobj.students[x].set_prn(prn);
+				systemobj.save_students_csv();
+				systemobj.students[x].display();
+				sr_no++;
+
+			}
+		}
+	}
+}
+void AdmissionSystem::display_students_with_prn(string co,string cen){
+	cout<<"\nList of allocated students:"<<endl;
+	for(unsigned i=0;i<students.size();i++){
+		if(students[i].getcenter_id()==cen && students[i].getcourse_name()==co && students[i].get_prn()!="NA")
+			students[i].display();
+	}
+}
 bool AdmissionSystem::sort_rankA(student s1,student s2){
 	return s1.getrankA()<s2.getrankA();
 }
@@ -380,7 +454,19 @@ bool AdmissionSystem::sort_rankB(student s1,student s2){
 bool AdmissionSystem::sort_rankC(student s1,student s2){
 	return s1.getrankC()<s2.getrankC();
 }
+bool AdmissionSystem::sort_preferences(preferences p1,preferences p2){
+	return p1.getid()<p2.getid();
+}
+bool AdmissionSystem::sort_BY_name(student s1,student s2){
+	return s1.getname() < s2.getname();
 
+}
+bool AdmissionSystem::sort_BY_course_name(student s1,student s2){
+	return s1.getcourse_name() < s2.getcourse_name();
+}
+bool AdmissionSystem::sort_BY_center_id(student s1,student s2){
+	return s1.getcenter_id() < s2.getcenter_id();
+}
 void AdmissionSystem::round1_allocation(){
 	//systemobj.load_students();
 	unsigned i,j;
@@ -478,12 +564,14 @@ void AdmissionSystem::round2_allocation(){
 	for(i=0;i<students.size();i++){
 		if(students[i].getalloc_pref()>0 && students[i].getpayment()==0){
 			students[i].setpayment(-1);
-
-			students[i].setalloc_pref(0);
-			students[i].setcenter_id("NA");
-			students[i].setcourse_name("NA");
 		}
 	}
+	for(i=0;i<students.size();i++){
+		students[i].setalloc_pref(0);
+		students[i].setcenter_id("NA");
+		students[i].setcourse_name("NA");
+	}
+
 	for(i=0;i<cap.size();i++){
 		cap[i].setfilled_capacity(0);
 	}
@@ -491,8 +579,25 @@ void AdmissionSystem::round2_allocation(){
 }
 
 
+void AdmissionSystem::save_students_csv(){
+	//systemobj.load_students();
+	ofstream fp("../newstudents.csv");
+	for(unsigned i=0;i<students.size();i++){
+		fp<<students[i].getid()<<","<<students[i].getname()<<","<<students[i].getrankA()<<","<<students[i].getrankB()<<","<<students[i].getrankC()
+										<<","<<students[i].getdegree()<<","<<students[i].getdegree_marks()<<","<<students[i].getalloc_pref()<<","<<students[i].getcourse_name()
+										<<","<<students[i].getcenter_id()<<","<<students[i].getpayment()<<","<<students[i].getreported()<<","<<students[i].get_prn()<<endl;
 
+	}
+	fp.close();
+}
+void  AdmissionSystem::save_preferences_csv(){
+	ofstream fp("../newpreferences.csv");
+	for(unsigned i=0;i<pref.size();i++){
+		fp<<pref[i].getid()<<","<<pref[i].get_preferences()<<","<<pref[i].getcourse_name()<<","<<pref[i].getcenter_id()<<endl;
 
+	}
+	fp.close();
+}
 
 AdmissionSystem::~AdmissionSystem(){
 

@@ -61,9 +61,25 @@ void centers::display(){
 }
 void centers::display_capacities(vector<capacities>& cap){
 	map<string,int>::iterator itr=course_caps.begin();
-		while(itr!=course_caps.end())
-		{
-			cap[itr->second].display();
-			itr++;
-		}
+	while(itr!=course_caps.end())
+	{
+		cap[itr->second].display();
+		itr++;
+	}
+}
+void centers::display_center_and_course(vector<capacities>& cap){
+	cout<<endl;
+	cout<<"Center Id:"<<this->getcenter_id()<<endl;
+	cout<<"Center Name:"<<this->getcenter_name()<<endl;
+	cout<<"Address:"<<this->getaddress()<<endl;
+	cout<<"Coordinator:"<<this->getcoordinator()<<endl;
+	cout<<"Password:"<<this->getpassword()<<endl;
+	cout<<"\n"<<endl;
+	map<string,int>::iterator itr=course_caps.begin();
+	while(itr!=course_caps.end())
+	{
+		cout<<" -";
+		cap[itr->second].display_centerandcourse();
+		itr++;
+	}
 }

@@ -15,8 +15,8 @@ class preferences
 	int preference;
 	string course_name,center_id;
 public:
-	//preferences();
-	//preferences(int id,string preferences,string course_name,string center_id);
+	preferences();
+	preferences(int id,int preference,string course_name,string center_id);
 	int getid();
 	void setid(int id);
 	int get_preferences();

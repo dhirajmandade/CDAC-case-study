@@ -26,6 +26,7 @@ public:
 	int getfilled_capacity();
 	void setfilled_capacity(int filled_capacity);
 	void display();
+	void display_centerandcourse();
 	virtual ~capacities();
 };
 

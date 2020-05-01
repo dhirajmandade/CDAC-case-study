@@ -51,7 +51,9 @@ void capacities::display(){
 	cout<<"filled capacity:"<<getfilled_capacity()<<endl;
 	cout<<"\n"<<endl;
 }
-
+void capacities::display_centerandcourse(){
+	cout<<getcourse_name()<<endl;
+}
 capacities::~capacities(){
 
 }

@@ -21,7 +21,7 @@ int student_menu_choice(){
 	cout<<"3.Give preferences"<<endl;
 	cout<<"4.See allocated center/course"<<endl;
 	cout<<"5.Update payment details"<<endl;
-	cout<<"Enter choice: ";
+	cout<<"\nEnter choice: ";
 	cin>>choice;
 	cout<<endl;
 	return choice;

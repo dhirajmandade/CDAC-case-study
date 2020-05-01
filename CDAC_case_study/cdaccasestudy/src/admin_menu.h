@@ -17,6 +17,7 @@ List_allocated_students,List_paid_students,List_reported_students,Generate_PRN,L
 int admin_menu_choice()
 {
 	int choice;
+	cout<<endl;
 	cout<<"0.Exit"<<endl;
 	cout<<"1.List courses & eligibilities"<<endl;
 	cout<<"2.List centers & capacities"<<endl;
@@ -29,7 +30,7 @@ int admin_menu_choice()
 	cout<<"9.List reported (at center) students"<<endl;
 	cout<<"10.Generate PRN"<<endl;
 	cout<<"11.List admitted students (with PRN) for given center"<<endl;
-	cout<<"Enter choice: ";
+	cout<<"\nEnter choice: ";
 	cin>>choice;
 	return choice;
 }
